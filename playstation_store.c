@@ -2,17 +2,44 @@
 
 int main() {
   
-  float price = 35500.45;
-  int quantity;
-  char currency[] = "TL";
-  float total;
+  int slr;
+  int yr;
 
-  printf("how many ps5 do you want? : ");
-  scanf("%d" , &quantity);
+  printf("enter the current salary : ");
+  scanf("%d", &slr);
 
-  total = quantity * price;
-  
-  printf("the total will be %.2f %s", total, currency);
+  if (slr < 0) {
+    printf("dont write a negative number");
+
+    return 0;
+  }
+
+  printf("enter the years of exp: ");
+  scanf("%d", &yr);
+
+  if (yr < 2 && 0 <= yr) {
+printf("there is no any bonus");
+
+  }
+
+  if (2 <= yr && yr <= 5) { 
+slr = slr * 1.05;
+printf("the final salary is %d" , slr);
+
+
+  }
+
+  if (5 <= yr) {
+slr = slr * 1.1;
+printf("the final salary is %d" , slr);
+
+  }
+
+  if (yr < 0){
+
+    printf("thats cannot be true buddy");
+  }
+
 
   return 0;
 

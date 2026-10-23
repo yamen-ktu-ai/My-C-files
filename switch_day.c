@@ -14,37 +14,36 @@ int main() {
     switch (no) {
     
         case 7:
-        puts("Sunday");
+            puts("Sunday");
             break;
 
         case 6:
-        puts("Saturday");
+            puts("Saturday");
             break;
 
-        // case 5:
             puts("Friday");
             break;
 
         case 4:
-        puts("Thursday");
+            puts("Thursday");
             break;
 
         case 3:
-        puts("Wednesday");
+            puts("Wednesday");
             break;
 
         case 2:
-        puts("Tuesday");
+            puts("Tuesday");
             break;
 
         case 1:
-        puts("Monday");
+            puts("Monday");
             break;
 
     
 
         default:
-            // puts("aynen dostum");
+        
             break;
     }
 
